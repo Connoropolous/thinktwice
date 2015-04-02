@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "ThinkTwice",
+  "description": "think twice before clicking on anything.",
+  "version": "0.1",
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["css/style.css"],
+      "js": ["thinktwice.js"]
+    }
+  ],
+  "web_accessible_resources": ["images/thinktwice.png"]
+}
